@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.trhelper.controller</OriginalElement>
+  <nodes>
+    <node x="277.6367924528302" y="273.0">org.trhelper.service.user.implementation.PlacedOrderServiceImpl</node>
+    <node x="517.625" y="168.0">org.trhelper.repository.order.PlacedOrderRepository</node>
+    <node x="262.625" y="168.0">org.trhelper.repository.order.PlacedOrderFilterRepository</node>
+    <node x="320.621462264151" y="356.0">org.trhelper.controller.PlacedOrderController</node>
+    <node x="10.5" y="83.0">org.trhelper.service.user.PlacedOrderService</node>
+    <node x="176.3867924528302" y="0.0">org.trhelper.domain.order.PlacedOrder</node>
+    <node x="210.50000000000003" y="83.0">org.trhelper.repository.order.PlacedOrderFilterRepositoryImpl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.trhelper.repository.order.PlacedOrderFilterRepositoryImpl" target="org.trhelper.repository.order.PlacedOrderFilterRepository" relationship="REALIZATION">
+      <point x="-65.75" y="15.5" />
+      <point x="276.25" y="146.0" />
+      <point x="321.375" y="146.0" />
+      <point x="-58.75" y="-15.5" />
+    </edge>
+    <edge source="org.trhelper.repository.order.PlacedOrderFilterRepositoryImpl" target="org.trhelper.domain.order.PlacedOrder" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="342.0" y="62.0" />
+      <point x="484.0" y="62.0" />
+      <point x="484.0" y="52.0" />
+      <point x="276.1367924528302" y="52.0" />
+      <point x="33.25" y="15.5" />
+    </edge>
+    <edge source="org.trhelper.service.user.implementation.PlacedOrderServiceImpl" target="org.trhelper.repository.order.PlacedOrderFilterRepository" relationship="TO_ONE">
+      <point x="26.125" y="-15.5" />
+      <point x="408.2617924528302" y="251.0" />
+      <point x="476.121462264151" y="251.0" />
+      <point x="476.121462264151" y="231.0" />
+      <point x="321.375" y="231.0" />
+      <point x="-58.75" y="15.5" />
+    </edge>
+    <edge source="org.trhelper.repository.order.PlacedOrderFilterRepository" target="org.trhelper.repository.order.PlacedOrderFilterRepositoryImpl" relationship="DEPENDENCY">
+      <point x="58.75" y="-15.5" />
+      <point x="438.875" y="146.0" />
+      <point x="379.933962264151" y="146.0" />
+      <point x="379.933962264151" y="136.0" />
+      <point x="407.75" y="136.0" />
+      <point x="65.75" y="15.5" />
+    </edge>
+    <edge source="org.trhelper.controller.PlacedOrderController" target="org.trhelper.domain.order.PlacedOrder" relationship="DEPENDENCY">
+      <point x="49.5" y="-15.5" />
+      <point x="469.121462264151" y="335.0" />
+      <point x="424.621462264151" y="335.0" />
+      <point x="424.621462264151" y="325.0" />
+      <point x="730.125" y="325.0" />
+      <point x="730.125" y="62.0" />
+      <point x="484.0" y="62.0" />
+      <point x="484.0" y="52.0" />
+      <point x="276.1367924528302" y="52.0" />
+      <point x="33.25" y="15.5" />
+    </edge>
+    <edge source="org.trhelper.service.user.implementation.PlacedOrderServiceImpl" target="org.trhelper.repository.order.PlacedOrderRepository" relationship="DEPENDENCY">
+      <point x="78.375" y="-15.5" />
+      <point x="460.5117924528302" y="241.0" />
+      <point x="495.058962264151" y="241.0" />
+      <point x="495.058962264151" y="221.0" />
+      <point x="669.125" y="221.0" />
+      <point x="50.5" y="15.5" />
+    </edge>
+    <edge source="org.trhelper.repository.order.PlacedOrderFilterRepository" target="org.trhelper.domain.order.PlacedOrder" relationship="DEPENDENCY">
+      <point x="58.75" y="-15.5" />
+      <point x="438.875" y="146.0" />
+      <point x="379.933962264151" y="146.0" />
+      <point x="379.933962264151" y="136.0" />
+      <point x="484.0" y="136.0" />
+      <point x="484.0" y="52.0" />
+      <point x="276.1367924528302" y="52.0" />
+      <point x="33.25" y="15.5" />
+    </edge>
+    <edge source="org.trhelper.service.user.implementation.PlacedOrderServiceImpl" target="org.trhelper.service.user.PlacedOrderService" relationship="REALIZATION">
+      <point x="-26.125" y="-15.5" />
+      <point x="356.0117924528302" y="241.0" />
+      <point x="100.5" y="241.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.trhelper.service.user.implementation.PlacedOrderServiceImpl" target="org.trhelper.domain.order.PlacedOrder" relationship="CREATE">
+      <point x="-78.375" y="-15.5" />
+      <point x="303.7617924528302" y="251.0" />
+      <point x="0.0" y="251.0" />
+      <point x="0.0" y="52.0" />
+      <point x="209.6367924528302" y="52.0" />
+      <point x="-33.25" y="15.5" />
+    </edge>
+    <edge source="org.trhelper.controller.PlacedOrderController" target="org.trhelper.service.user.implementation.PlacedOrderServiceImpl" relationship="TO_ONE">
+      <point x="-49.5" y="-15.5" />
+      <point x="370.121462264151" y="335.0" />
+      <point x="329.8867924528302" y="335.0" />
+      <point x="-52.25" y="15.5" />
+    </edge>
+    <edge source="org.trhelper.service.user.implementation.PlacedOrderServiceImpl" target="org.trhelper.repository.order.PlacedOrderRepository" relationship="TO_ONE">
+      <point x="26.125" y="-15.5" />
+      <point x="408.2617924528302" y="251.0" />
+      <point x="476.121462264151" y="251.0" />
+      <point x="476.121462264151" y="231.0" />
+      <point x="568.125" y="231.0" />
+      <point x="-50.5" y="15.5" />
+    </edge>
+    <edge source="org.trhelper.service.user.implementation.PlacedOrderServiceImpl" target="org.trhelper.repository.order.PlacedOrderFilterRepository" relationship="DEPENDENCY">
+      <point x="78.375" y="-15.5" />
+      <point x="460.5117924528302" y="241.0" />
+      <point x="495.058962264151" y="241.0" />
+      <point x="495.058962264151" y="221.0" />
+      <point x="438.875" y="221.0" />
+      <point x="58.75" y="15.5" />
+    </edge>
+    <edge source="org.trhelper.service.user.PlacedOrderService" target="org.trhelper.domain.order.PlacedOrder" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="100.5" y="62.0" />
+      <point x="484.0" y="62.0" />
+      <point x="484.0" y="52.0" />
+      <point x="276.1367924528302" y="52.0" />
+      <point x="33.25" y="15.5" />
+    </edge>
+    <edge source="org.trhelper.repository.order.PlacedOrderRepository" target="org.trhelper.domain.order.PlacedOrder" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="618.625" y="62.0" />
+      <point x="484.0" y="62.0" />
+      <point x="484.0" y="52.0" />
+      <point x="276.1367924528302" y="52.0" />
+      <point x="33.25" y="15.5" />
+    </edge>
+    <edge source="org.trhelper.controller.PlacedOrderController" target="org.trhelper.service.user.implementation.PlacedOrderServiceImpl" relationship="DEPENDENCY">
+      <point x="49.5" y="-15.5" />
+      <point x="469.121462264151" y="335.0" />
+      <point x="424.621462264151" y="335.0" />
+      <point x="424.621462264151" y="325.0" />
+      <point x="434.3867924528302" y="325.0" />
+      <point x="52.25" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="365.5" y="193.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
